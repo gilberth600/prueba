@@ -84,7 +84,7 @@ public class GestorMensajes {
         }
     }
 
-    // Recibir mensaje UDP
+    // Recibir mensajes UDP
     public String recibirMensajeUDP(int puerto) {
         try (DatagramSocket socket = new DatagramSocket(puerto)) {
             byte[] buffer = new byte[1024];
